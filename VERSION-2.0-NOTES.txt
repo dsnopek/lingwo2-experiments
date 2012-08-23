@@ -1,0 +1,64 @@
+
+Ideas
+=====
+
+ * Sense as entity
+   o fieldable
+     - definition
+	 - example
+	 - relationship
+	 - clue
+	 - translation
+   o gets it's own id
+   o Can be related to other things via 'relation' module!
+ * Entry as entity
+   o comments?
+   o divorce it from the node table so we don't worry about number of entries
+   o lang, trans and hash can appear on the base table
+ * Pron as an entity?
+   o Fields: IPA, taxonomy, file
+ * Fields as field?
+   o Custom widget for multiple values
+ * Source as a field_collection
+
+Open questions
+==============
+
+ * Are taxonomy terms connected directly to node? Or can they affect any entity type?
+
+ * Will 'diff' work with any versioned entity?
+
+ * Will we really have to declare so many entity types? Or can we reduce the number somehow?
+
+ * How will 'diff' work with senses in field_collection's?
+
+ * Should lingwo_entry be an entity or node?
+   o Can we have comments on custom entities?
+     - Not with core!
+	 - http://drupal.org/project/reply
+	 - http://drupal.org/node/731724
+   o Can we use MongoDB for the storage?
+ 
+ * Move translations into entity languaeg stuff - rather than tnid?
+   - This would drastically reduce the number of nodes, simplify code, etc..
+   - http://drupal.org/project/entity_translation
+   - Can we show a specific language of a translation even when a different language
+     is the current? For example: We're in English mode but we want to see the Polish
+	 version of a particular node.
+   - Can we write a new content selection plugin? Something that is only URL and 
+     not session based?
+	 o hook_language_negotiation_info()
+	 o Or permalinks on node/%node/translation/%lang which work for both translation and
+	   entity_translation!
+
+ * Is "sense" a new entity type? Or just a new bundle on the field collection entity?
+   o Are field collections exportable?
+   o Can we do our weird translation / language magic to them?
+ 
+ * At what layer do we do our magic? Ie:
+   o Translations look different than their sources
+   o Languages have different values available to them
+ 
+ * UUID will be in Drupal 8 core. Will nid, et al go away?
+   o http://drupal.org/node/1726734
+

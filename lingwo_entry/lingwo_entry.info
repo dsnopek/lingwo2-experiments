@@ -1,0 +1,5 @@
+name = Lingwo entry
+description = Sets up an entity to a dictionary entry. All other Lingwo modules build on this.
+package = Lingwo dictionary
+core = 7.x
+dependencies[] = entity
