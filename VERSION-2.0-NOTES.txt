@@ -16,13 +16,18 @@ Ideas
    o divorce it from the node table so we don't worry about number of entries
    o lang, trans and hash can appear on the base table
  * Pron as an entity?
-   o Fields: IPA, taxonomy, file
+   o Fields: IPA (text field widget, display format?), taxonomy, file
  * Fields as field?
    o Custom widget for multiple values
  * Source as a field_collection
 
 Open questions
 ==============
+
+ * Javascript keyboard for IPA?
+   o http://www.ajaxblender.com/jquery-virtual-keyboard.html
+   o http://mottie.github.com/Keyboard/
+   o http://drupal.org/project/google_virtual_keyboard
 
  * Are taxonomy terms connected directly to node? Or can they affect any entity type?
 
